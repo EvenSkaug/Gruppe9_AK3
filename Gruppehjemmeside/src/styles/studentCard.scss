@@ -1,0 +1,24 @@
+.student-card {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+    margin-bottom: var(--spacing-xs);
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .student-card {
+        justify-self: center;
+        grid-column: span 4;
+        max-width: 350px;
+    }
+}

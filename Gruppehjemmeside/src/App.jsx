@@ -1,11 +1,22 @@
 import { useState } from 'react'
-import './App.css'
+import './styles/global.scss'
+
+import { Route, Routes } from 'react-router-dom'
+
+import Layout from './components/Layout'
+import PageContent from './components/PageContent'
+import Home from './components/Home'
 
 function App() {
 
   return (
     <>
-      <h1>Hey boys</h1>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/:slug" element={<PageContent />} />
+        </Routes>
+      </Layout>
     </>
   )
 }

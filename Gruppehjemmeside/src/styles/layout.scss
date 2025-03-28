@@ -1,0 +1,33 @@
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 var(--spacing-sm);
+    background-color: var(--white);
+    border-bottom: 1px solid var(--gray-border);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+}
+
+main {
+    color: #000;
+    background-color: var(--white);
+}
+
+footer {
+    background-color: var(--white);
+    padding: 2rem;
+    color: #000;
+    border-top: 1px solid var(--gray-border);
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding: 0 var(--spacing-xxl);
+    }
+}
