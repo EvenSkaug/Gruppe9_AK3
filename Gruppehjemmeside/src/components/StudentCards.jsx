@@ -4,9 +4,9 @@ import "../styles/studentCards.scss";
 
 export default function StudentCards() {
     const students = [
-        {id: 1, name: "Stian", image: "../200x300.png", epost: "stian@email.com"},
-        {id: 2, name: "Even", image: "../200x300.png", epost: "even@email.com"},
-        {id: 3, name: "Simon", image: "../200x300.png", epost: "simon@email.com"}
+        {id: 1, name: "Stian", image: "../200x200.png", epost: "stian@email.com"},
+        {id: 2, name: "Even", image: "../200x200.png", epost: "even@email.com"},
+        {id: 3, name: "Simon", image: "../200x200.png", epost: "simon@email.com"}
       ]
 
     return (
