@@ -1,5 +1,5 @@
 .student-card {
-    grid-column: 1 / -1;
+    grid-column: span 1;
     display: flex;
     flex-direction: column;
     width: 100%;
