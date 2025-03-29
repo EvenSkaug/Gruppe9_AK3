@@ -12,9 +12,13 @@ export default function Home() {
             </article>
         </section>
         <section className="student-cards-section grid">
+            <h2 className="student-cards-section-title">Medlemmer</h2>
 
             <StudentCards />
 
+        </section>
+        <section className="work-log-section grid">
+            <h2 className="work-log-section-title">Arbeidslogg</h2>
         </section>
         </>
     )

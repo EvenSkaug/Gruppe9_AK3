@@ -7,9 +7,9 @@ export default function Nav() {
         <nav>
             <ul>
                 <li><Link to="/">Hjem</Link></li>
-                <li><Link to="/">Stian</Link></li>
-                <li><Link to="/">Even</Link></li>
-                <li><Link to="/">Simon</Link></li>
+                <li><Link to="/stian">Stian</Link></li>
+                <li><Link to="/even">Even</Link></li>
+                <li><Link to="/simon">Simon</Link></li>
             </ul>
         </nav>
     )

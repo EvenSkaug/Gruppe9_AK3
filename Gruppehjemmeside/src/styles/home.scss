@@ -9,14 +9,21 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding-top: var(--spacing-md);
+        padding-bottom: var(--spacing-md);
     }
 }
 
 .student-cards-section {
+    border-bottom: 1px solid var(--gray-border);
     .student-cards-section-title {
         grid-column: 1 / -1;
-        margin-top: var(--spacing-xxl);
-        margin-bottom: var(--spacing-md);
+    }
+}
+
+.work-log-section {
+    .work-log-section-title {
+        grid-column: 1 / -1
     }
 }
 
@@ -28,10 +35,11 @@
 }
 
 @media (min-width: 1024px) {
-    .student-cards-section {
-        .student-cards-section-title {
-            margin-top: var(--spacing-lg);
-            margin-bottom: var(--spacing-md);;
+    .hero-section {
+        article {
+            h1 {
+                font-size: 72px;
+            }
         }
     }
 }
