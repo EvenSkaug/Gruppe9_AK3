@@ -1,22 +1,21 @@
 .hero-section {
     padding-top: var(--spacing-xxl);
     padding-bottom: var(--spacing-xxl);
-    background-color: var(--green);
+    background-color: #000;
     color: var(--white);
 
     article {
         grid-column: 1 / -1;
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 }
 
 .student-cards-section {
-    padding-top: 0;
-
     .student-cards-section-title {
         grid-column: 1 / -1;
-        margin-top: var(--spacing-lg);
+        margin-top: var(--spacing-xxl);
         margin-bottom: var(--spacing-md);
     }
 }

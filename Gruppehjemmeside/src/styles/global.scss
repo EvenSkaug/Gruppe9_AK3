@@ -116,7 +116,6 @@ p {
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
   }
 
   h1 {
@@ -133,6 +132,10 @@ p {
 }
 
 @media (min-width: 1024px) {
+  .grid {
+    gap: 2rem;
+  }
+
   section {
     padding: 3rem 6rem;
   }

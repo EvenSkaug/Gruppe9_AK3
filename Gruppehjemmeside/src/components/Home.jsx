@@ -7,12 +7,11 @@ export default function Home() {
         <>
         <section className="hero-section grid">
             <article>
-                <h1>Arbeidslogg</h1>
+                <h1>GRUPPE IX</h1>
                 <p>En hjemmeside</p>
             </article>
         </section>
         <section className="student-cards-section grid">
-            <h2 className="student-cards-section-title">Medlemmer</h2>
 
             <StudentCards />
 
