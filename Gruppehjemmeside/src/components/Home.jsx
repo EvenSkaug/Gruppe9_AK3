@@ -1,6 +1,7 @@
 import MemberCards from "./MemberCards";
 
 import "../styles/home.scss";
+import WorkLog from "./WorkLog";
 
 export default function Home() {
     return (
@@ -17,9 +18,8 @@ export default function Home() {
             <MemberCards />
 
         </section>
-        <section className="work-log-section grid">
-            <h2 className="work-log-section-title">Arbeidslogg</h2>
-        </section>
+
+        <WorkLog />
         </>
     )
 }
