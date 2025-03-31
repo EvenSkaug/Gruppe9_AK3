@@ -1,4 +1,4 @@
-import StudentCards from "./StudentCards";
+import MemberCards from "./MemberCards";
 
 import "../styles/home.scss";
 
@@ -11,10 +11,10 @@ export default function Home() {
                 <p>En hjemmeside</p>
             </article>
         </section>
-        <section className="student-cards-section grid">
-            <h2 className="student-cards-section-title">Medlemmer</h2>
+        <section className="member-cards-section grid">
+            <h2 className="member-cards-section-title">Medlemmer</h2>
 
-            <StudentCards />
+            <MemberCards />
 
         </section>
         <section className="work-log-section grid">

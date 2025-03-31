@@ -3,12 +3,13 @@ import { useParams } from "react-router-dom"
 import "../styles/pageContent.scss"
 
 export default function PageContent() {
-    const {slug} = useParams();
+    // Hovedinnholdet på siden
+    const {member} = useParams();
  
     return (
         <section className="page-content-section grid">
-            <img src="../200x200.png" alt="student-image" />
-            <h1>Side for {slug}</h1>
+            <img src="../200x200.png" alt="member-image" />
+            <h1>Side for {member}</h1>
 
         </section>
     )

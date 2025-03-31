@@ -11,12 +11,12 @@ function App() {
 
   return (
     <>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/:slug" element={<PageContent />} />
-        </Routes>
-      </Layout>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="members/:member" element={<PageContent />} />
+      </Routes>
+    </Layout>
     </>
   )
 }
