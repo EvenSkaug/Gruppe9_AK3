@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom"
 
-import "../styles/pageContent.scss"
 import WorkLog from "./WorkLog";
+
+import "../styles/pageContent.scss"
 
 export default function PageContent() {
     // Hovedinnholdet på siden

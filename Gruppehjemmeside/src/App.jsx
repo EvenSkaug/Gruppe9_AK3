@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 
 import Layout from './components/Layout'
-import PageContent from './components/PageContent'
 import Home from './components/Home'
+import PageContent from './components/PageContent'
 
 import './styles/global.scss'
 

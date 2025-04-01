@@ -14,18 +14,6 @@
     }
 }
 
-.member-cards-section {
-    .member-cards-section-title {
-        grid-column: 1 / -1;
-    }
-}
-
-.work-log-section {
-    .work-log-section-title {
-        grid-column: 1 / -1
-    }
-}
-
 @media (min-width: 768px) {
     .hero-section {
         padding-top: var(--spacing-xxxl);

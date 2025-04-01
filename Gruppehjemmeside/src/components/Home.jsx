@@ -1,7 +1,8 @@
 import MemberCards from "./MemberCards";
+import WorkLog from "./WorkLog";
 
 import "../styles/home.scss";
-import WorkLog from "./WorkLog";
+import SectionTitle from "./SectionTitle";
 
 export default function Home() {
     return (
@@ -13,10 +14,9 @@ export default function Home() {
             </article>
         </section>
         <section className="member-cards-section grid">
-            <h2 className="member-cards-section-title">Medlemmer</h2>
-
+            <SectionTitle title="Medlemmer" />
+            
             <MemberCards />
-
         </section>
 
         <WorkLog />
