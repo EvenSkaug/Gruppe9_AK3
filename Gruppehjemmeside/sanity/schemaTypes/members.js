@@ -9,9 +9,14 @@ export default  {
         type: "string",
       },
       {
-        name: "phonenumber",
-        title: "Phone Number",
-        type: "number",
+        name: "image",
+        title: "Image",
+        type: "image",
+      },
+      {
+        name: "description",
+        title: "Desctiption",
+        type: "text",
       },
       {
         name: "email",
