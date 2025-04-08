@@ -24,7 +24,7 @@ export default function WorkLog() {
             <ul>
                 {worklogs?.map((worklog) => (
                 <li key={worklog._key}>
-                {worklog.description} {worklog.date}
+                <span>{worklog.description}</span> <span>{worklog.date}</span>
                 </li>))}
             </ul>
         </section>
