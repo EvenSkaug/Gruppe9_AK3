@@ -22,9 +22,10 @@ export default function WorkLog() {
             <SectionTitle title="Arbeidslogg" />
             
             <ul>
-                {worklogs?.map((worklog) => (
-                <li key={worklog._key}>
-                <span>{worklog.description}</span> <span>{worklog.date}</span>
+                {worklogs?.map((log) => (
+                <li key={log._key}>
+                    <span>{log.description}</span> 
+                    <span>{log.date}</span>
                 </li>))}
             </ul>
         </section>

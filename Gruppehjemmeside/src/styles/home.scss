@@ -3,6 +3,7 @@
     padding-bottom: var(--spacing-xxl);
     background-color: #000;
     color: var(--white);
+    width: 100%;
 
     article {
         grid-column: 1 / -1;
@@ -12,6 +13,10 @@
         padding-top: var(--spacing-md);
         padding-bottom: var(--spacing-md);
     }
+}
+
+.member-cards-section {
+    max-width: 1200px;
 }
 
 @media (min-width: 768px) {

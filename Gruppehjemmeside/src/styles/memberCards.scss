@@ -1,13 +1,6 @@
 .member-cards {
     grid-column: 1 / -1;
     width: 100%;
-
     padding-top: var(--spacing-md);
     padding-bottom: var(--spacing-md);
-}
-
-@media (min-width: 1024px) {
-    .member-cards {
-        grid-column: 2 / 12;
-    }
 }
