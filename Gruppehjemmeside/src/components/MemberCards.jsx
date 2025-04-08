@@ -3,20 +3,8 @@ import "../styles/memberCards.scss";
 import { fetchAllMembers } from "../sanity/fetches";
 import { useEffect, useState } from "react";
 
-export default function MemberCards() {
-
-    const [members, setMembers] = useState([])
-
-    const getAllMembers = async () => {
-            const data = await fetchAllMembers();
-            setMembers(data);
-          };
-    
-        useEffect(() => {
-            getAllMembers();
-          }, []);     
-    
-          return (
+export default function MemberCards({members}) {
+    return (
         <>
         <div className="member-cards grid">
             {(members).map((member) => (

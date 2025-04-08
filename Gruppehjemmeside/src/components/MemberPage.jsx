@@ -2,10 +2,10 @@ import { useParams } from "react-router-dom"
 
 import WorkLog from "./WorkLog";
 
-import "../styles/pageContent.scss"
+import "../styles/memberPage.scss"
 
-export default function PageContent() {
-    // Hovedinnholdet på siden
+export default function MemberPage({members}) {
+
     const {member} = useParams();
  
     return (

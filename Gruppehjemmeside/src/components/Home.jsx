@@ -4,7 +4,7 @@ import WorkLog from "./WorkLog";
 import "../styles/home.scss";
 import SectionTitle from "./SectionTitle";
 
-export default function Home() {
+export default function Home({members}) {
     return (
         <>
         <section className="hero-section grid">
@@ -16,7 +16,7 @@ export default function Home() {
         <section className="member-cards-section grid">
             <SectionTitle title="Medlemmer" />
             
-            <MemberCards />
+            <MemberCards members={members} />
         </section>
 
         <WorkLog />

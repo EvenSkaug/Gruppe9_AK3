@@ -2,14 +2,16 @@ import { Link } from "react-router-dom";
 
 import "../styles/nav.scss";
 
-export default function Nav() {
+export default function Nav({members}) {
     return (
         <nav>
             <ul>
                 <li><Link to="/">Hjem</Link></li>
-                <li><Link to="members/stian">Stian</Link></li>
-                <li><Link to="members/even">Even</Link></li>
-                <li><Link to="members/simon">Simon</Link></li>
+                {members?.map((member) => (
+                    <li key={member._id}>
+                        <Link to={`/members/${member.slug}`}>{member.name}</Link>
+                    </li>
+                ))}
             </ul>
         </nav>
     )

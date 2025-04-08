@@ -2,12 +2,12 @@ import Nav from "./Nav";
 
 import "../styles/layout.scss";
 
-export default function Layout({children}) {
+export default function Layout({children, members}) {
     // Overordnet struktur på siden
     return (
         <>
         <header className="grid">
-            <Nav />
+            <Nav members={members} />
         </header>
         <main>
             {children}
