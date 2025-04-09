@@ -13,6 +13,7 @@ export default function MemberCards({members}) {
                     image={member.image.asset.url}
                     name={member.name}
                     email={member.email}
+                    slug={member.slug}
                 />
             ))}
         </div>
