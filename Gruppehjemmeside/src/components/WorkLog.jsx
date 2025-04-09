@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchAllWorkLogs, fetchWorkLogs } from "../sanity/fetches";
+import { fetchAllWorkLogs, fetchWorkLogsByMember } from "../sanity/fetches";
 import "../styles/workLog.scss";
 import SectionTitle from "./SectionTitle";
 
@@ -7,9 +7,9 @@ export default function WorkLog({memberId}) {
 
     const [workLogs, setWorkLogs] = useState([])
     
-    const getWorkLogs = async () => {
+    const getWorkLogsByMember = async () => {
         if (memberId) {
-            const data = await fetchWorkLogs(memberId);
+            const data = await fetchWorkLogsByMember(memberId);
             setWorkLogs(data || []);
         }
     };
@@ -21,7 +21,7 @@ export default function WorkLog({memberId}) {
 
     useEffect(() => {
         if (memberId) {
-            getWorkLogs();
+            getWorkLogsByMember();
         }
         else {
             getAllWorkLogs();

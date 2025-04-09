@@ -6,7 +6,7 @@ import "../styles/memberPage.scss"
 import { useEffect, useState } from "react";
 import { fetchMemberBySlug } from "../sanity/fetches";
 
-export default function MemberPage() {
+export default function MemberPage({}) {
     const {member} = useParams();
     const [currentMember, setCurrentMember] = useState([]);
 
@@ -22,9 +22,10 @@ export default function MemberPage() {
     return (
         <>
         <section className="page-content-section grid">
-            <img src={currentMember?.image?.asset?.url} alt="member-image" />
-            <h1>Side for {currentMember?.name}</h1>
-
+            <article className="grid">
+                <img src={currentMember?.image?.asset?.url} alt="member-image" />
+                <h1>{currentMember?.name}</h1>
+            </article>
         </section>
         
         <WorkLog memberId={member}/>

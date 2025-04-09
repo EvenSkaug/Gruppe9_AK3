@@ -22,7 +22,7 @@ export async function fetchAllMembers() {
     return data;
   }
 
-  export async function fetchWorkLogs(memberSlug) {
+  export async function fetchWorkLogsByMember(memberSlug) {
     const data = await client.fetch(
       `*[_type == "members" && slug.current == "${memberSlug}"]{worklog[]{date, description, _key}}[0].worklog | order(date desc)`
     );
