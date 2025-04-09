@@ -127,15 +127,11 @@ p {
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .grid {
-    gap: 2rem;
-  }
-
   h1 {
     font-size: 3rem;
   }
@@ -145,6 +141,6 @@ p {
   }
 
   h3 {
-    font-size: 2.2;
+    font-size: 2rem;
   }
 }
