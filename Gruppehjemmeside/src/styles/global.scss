@@ -48,7 +48,12 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #666;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--black);
 }
 
 button {

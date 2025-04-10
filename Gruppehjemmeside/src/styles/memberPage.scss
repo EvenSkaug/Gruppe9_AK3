@@ -19,6 +19,16 @@
 
         h1 {
             text-align: center;
+            margin-bottom: 0;
+        }
+
+        .email-link {
+            text-align: center;
+        }
+
+        p {
+            max-width: 500px;
+            margin-top: 1rem;
         }
 
         h2 {
@@ -42,10 +52,11 @@
 
             h1 {
                 text-align: left;
+                
             }
 
-            p {
-                max-width: 500px;
+            .email-link {
+                text-align: left;
             }
         }
     }

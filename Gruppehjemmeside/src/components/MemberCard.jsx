@@ -6,7 +6,9 @@ export default function MemberCard({name, image, email, slug}) {
         <article className="member-card">
             <img src={image} alt="member-image" />
             <h3>{name}</h3>
-            <p>{email}</p>
+            <a href={`mailto:${email}`} className="email-link">
+                {email}
+            </a>
             <Link to={`/members/${slug}`}>
                 <button className="member-button">Se profil</button>
             </Link>

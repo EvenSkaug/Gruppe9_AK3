@@ -25,6 +25,9 @@ export default function MemberPage({}) {
             <img src={currentMember?.image?.asset?.url} alt="member-image" />
             <article>
                 <h1>{currentMember?.name}</h1>
+                <a href={`mailto:${currentMember?.email}`} className="email-link">
+                    {currentMember?.email}
+                </a>
                 <p>{currentMember?.description}</p>
                 <h2>Interesser</h2>
                 <ul>
