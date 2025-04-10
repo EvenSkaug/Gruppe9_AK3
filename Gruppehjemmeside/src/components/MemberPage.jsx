@@ -35,7 +35,7 @@ export default function MemberPage({}) {
             </article>
         </section>
         
-        <WorkLog memberId={member}/>
+        <WorkLog memberSlug={member} />
         </>
     )
 }

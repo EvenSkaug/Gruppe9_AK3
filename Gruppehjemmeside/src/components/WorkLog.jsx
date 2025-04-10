@@ -3,13 +3,13 @@ import { fetchAllWorkLogs, fetchWorkLogsByMember } from "../sanity/fetches";
 import "../styles/workLog.scss";
 import SectionTitle from "./SectionTitle";
 
-export default function WorkLog({memberId}) {
+export default function WorkLog({memberSlug}) {
 
     const [workLogs, setWorkLogs] = useState([])
     
     const getWorkLogsByMember = async () => {
-        if (memberId) {
-            const data = await fetchWorkLogsByMember(memberId);
+        if (memberSlug) {
+            const data = await fetchWorkLogsByMember(memberSlug);
             setWorkLogs(data || []);
         }
     };
@@ -20,13 +20,13 @@ export default function WorkLog({memberId}) {
     };
 
     useEffect(() => {
-        if (memberId) {
+        if (memberSlug) {
             getWorkLogsByMember();
         }
         else {
             getAllWorkLogs();
         }
-    }, [memberId]);
+    }, [memberSlug]);
     
     return (
         <section className="work-log-section grid">
