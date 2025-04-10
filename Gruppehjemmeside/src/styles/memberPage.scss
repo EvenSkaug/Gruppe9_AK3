@@ -10,6 +10,8 @@
         height: 450px;
         object-fit: cover;
         border-radius: 10px;
+        border: 5px solid var(--white);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     }
     
     article {
@@ -44,11 +46,11 @@
 @media (min-width: 768px) {
     .page-content-section {
         img {
-            grid-column: 1 / 5;
+            grid-column: 1 / 6;
         }
 
         article {
-            grid-column: 5 / -1;
+            grid-column: 6 / -1;
 
             h1 {
                 text-align: left;
@@ -66,5 +68,13 @@
     .page-content-section {
         padding-top: var(--spacing-xl);
         padding-bottom: var(--spacing-xl);
+
+        img {
+            grid-column: 1 / 5;
+        }
+
+        article {
+            grid-column: 5 / -1;
+        }
     }
 }
