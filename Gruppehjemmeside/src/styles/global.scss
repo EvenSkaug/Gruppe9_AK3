@@ -6,7 +6,7 @@
   --off-white: #f7f7f7;
   --red: #a31c2c;
   --gray-border: #e3e3e3;
-  --black: #000;
+  --black: #1a1a1a;
   --green: #528d73;
   --gray: #ECECEC;
 
@@ -76,6 +76,7 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: var(--black);
   margin: 0.5rem 0;
   font-weight: 700;
   line-height: 1.2;
