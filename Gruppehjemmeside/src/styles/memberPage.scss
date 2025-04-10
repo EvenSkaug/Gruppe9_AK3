@@ -17,6 +17,10 @@
             grid-column: 1 / -1;
             text-align: center;
         }
+
+        p { //denne kan du sette under navnet når du har tid
+            grid-column: 1 / -1
+        }
     }
 }
 

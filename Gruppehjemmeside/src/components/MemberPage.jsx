@@ -25,6 +25,7 @@ export default function MemberPage({}) {
             <article className="grid">
                 <img src={currentMember?.image?.asset?.url} alt="member-image" />
                 <h1>{currentMember?.name}</h1>
+                <p>{currentMember?.description}</p>
             </article>
         </section>
         
