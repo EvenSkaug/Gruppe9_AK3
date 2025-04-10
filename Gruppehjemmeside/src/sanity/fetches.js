@@ -9,7 +9,7 @@ export async function fetchAllMembers() {
 
   export async function fetchMemberBySlug(slug) {
     const data = await client.fetch(
-        `*[_type == "members" && slug.current == "${slug}"]{_id, name, image { asset -> { _id, url } }, email, description, "slug" : slug.current, worklog[] { date, description, _key }
+        `*[_type == "members" && slug.current == "${slug}"]{_id, name, image { asset -> { _id, url } }, email, interests, description, "slug" : slug.current, worklog[] { date, description, _key }
         }`
     );
     return data;

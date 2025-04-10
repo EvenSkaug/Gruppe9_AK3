@@ -22,10 +22,16 @@ export default function MemberPage({}) {
     return (
         <>
         <section className="page-content-section grid">
+        <img src={currentMember?.image?.asset?.url} alt="member-image" />
             <article className="grid">
-                <img src={currentMember?.image?.asset?.url} alt="member-image" />
                 <h1>{currentMember?.name}</h1>
                 <p>{currentMember?.description}</p>
+                <h2>Interesser</h2>
+                <ul>
+                    {currentMember?.interests?.map((interest) => (
+                        <li>{interest}</li>
+                    ))}
+                </ul>
             </article>
         </section>
         
