@@ -1,0 +1,15 @@
+.email-link {
+    align-self: center;
+    color: var(--gray);
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--black);
+    }
+}
+
+@media (min-width: 768px) {
+    .email-link {
+        align-self: flex-start;
+    }
+}

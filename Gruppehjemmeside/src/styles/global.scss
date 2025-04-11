@@ -4,11 +4,11 @@
   /* Colors */
   --white: #f9f9f9;
   --off-white: #f7f7f7;
-  --red: #a31c2c;
-  --gray-border: #e3e3e3;
   --black: #1a1a1a;
+  --gray: #777;
+  --gray-border: #e3e3e3;
   --green: #528d73;
-  --gray: #ECECEC;
+  --red: #a31c2c;
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -48,12 +48,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #666;
-}
 
-a:hover {
-  text-decoration: underline;
-  color: var(--black);
+  &:hover {
+    color: var(--black);
+  }
 }
 
 button {
@@ -64,11 +62,14 @@ button {
   padding: .5rem 1rem;
   background-color: var(--black);
   color: var(--white);
+  border: solid 2px var(--black);
   border-radius: 5px;
-}
+  transition: ease .2s;
 
-button:hover {
-  background-color: #333;
+  &:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
 }
 
 section {
@@ -117,6 +118,10 @@ p {
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.6;
+}
+
+ul {
+  list-style: none;
 }
 
 @media (min-width: 768px) {

@@ -5,6 +5,7 @@ import WorkLog from "./WorkLog";
 import "../styles/memberPage.scss"
 import { useEffect, useState } from "react";
 import { fetchMemberBySlug } from "../sanity/fetches";
+import EmailLink from "./EmailLink";
 
 export default function MemberPage({}) {
     const {member} = useParams();
@@ -25,9 +26,9 @@ export default function MemberPage({}) {
             <img src={currentMember?.image?.asset?.url} alt="member-image" />
             <article>
                 <h1>{currentMember?.name}</h1>
-                <a href={`mailto:${currentMember?.email}`} className="email-link">
-                    {currentMember?.email}
-                </a>
+                
+                <EmailLink email={currentMember?.email} />
+
                 <p>{currentMember?.description}</p>
                 <h2>Interesser</h2>
                 <ul>
