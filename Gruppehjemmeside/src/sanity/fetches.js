@@ -2,7 +2,7 @@ import { client } from "./client";
 
 export async function fetchAllMembers() {
     const data = await client.fetch(
-      `*[_type == "members"]{_id, name,  image{asset ->{ _id, url }}, email, description, "slug" : slug.current, worklog[] { date, description, _key }}`
+      `*[_type == "members"]{_id, name, navname, image{asset ->{ _id, url }}, email, description, "slug" : slug.current, worklog[] { date, description, _key }}`
     );
     return data;
   }

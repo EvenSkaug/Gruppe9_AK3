@@ -10,13 +10,13 @@ export default function WorkLog({memberSlug}) {
     const getWorkLogsByMember = async () => {
         if (memberSlug) {
             const data = await fetchWorkLogsByMember(memberSlug);
-            setWorkLogs(data || []);
+            setWorkLogs(data);
         }
     };
 
     const getAllWorkLogs = async () => {
         const data = await fetchAllWorkLogs();
-        setWorkLogs(data || []);
+        setWorkLogs(data);
     };
 
     useEffect(() => {
@@ -35,8 +35,10 @@ export default function WorkLog({memberSlug}) {
             <ul>
                 {workLogs?.map((log) => (
                 <li key={log._key}>
-                <span>{log.description}</span> 
-                <span>{log.date}</span>
+                    <span>{log.description}</span> 
+                    <span>
+                        {new Date(log.date).toISOString().slice(0, 10).split("-").reverse().join("/")}
+                    </span>
                 </li>))}
             </ul>
         </section>

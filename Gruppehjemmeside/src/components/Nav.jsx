@@ -9,7 +9,7 @@ export default function Nav({members}) {
                 <li><Link to="/">Hjem</Link></li>
                 {members?.map((member) => (
                     <li key={member._id}>
-                        <Link to={`/members/${member.slug}`}>{member.name}</Link>
+                        <Link to={`/members/${member.slug}`}>{member.navname}</Link>
                     </li>
                 ))}
             </ul>

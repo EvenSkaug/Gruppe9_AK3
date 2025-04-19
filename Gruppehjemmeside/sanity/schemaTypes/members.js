@@ -9,6 +9,11 @@ export default  {
         type: "string",
       },
       {
+        name: "navname",
+        title: "Nav name",
+        type: "string"
+      },
+      {
         name: "image",
         title: "Image",
         type: "image",
