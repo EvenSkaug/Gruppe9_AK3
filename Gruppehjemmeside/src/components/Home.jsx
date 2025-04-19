@@ -1,8 +1,8 @@
+import SectionTitle from "./SectionTitle";
 import MemberCards from "./MemberCards";
 import WorkLog from "./WorkLog";
 
 import "../styles/home.scss";
-import SectionTitle from "./SectionTitle";
 
 export default function Home({members}) {
     return (

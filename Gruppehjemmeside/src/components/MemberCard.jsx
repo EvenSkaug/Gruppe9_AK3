@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
-import "../styles/memberCard.scss";
+
 import EmailLink from "./EmailLink";
+
+import "../styles/memberCard.scss";
 
 export default function MemberCard({name, image, email, slug}) {
     return (

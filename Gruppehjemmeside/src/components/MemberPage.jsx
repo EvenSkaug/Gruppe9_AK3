@@ -1,13 +1,14 @@
-import { useParams } from "react-router-dom"
-
-import WorkLog from "./WorkLog";
-
-import "../styles/memberPage.scss"
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchMemberBySlug } from "../sanity/fetches";
+
 import EmailLink from "./EmailLink";
+import WorkLog from "./WorkLog";
+
+import "../styles/memberPage.scss";
 
 export default function MemberPage({}) {
+    // Henter slug - for videre filtrering
     const {member} = useParams();
     const [currentMember, setCurrentMember] = useState([]);
 
@@ -39,6 +40,8 @@ export default function MemberPage({}) {
             </article>
         </section>
         
+        {/* Sender med slug for filtering av individuell arbeidslogg
+        - se komponent */}
         <WorkLog memberSlug={member} />
         </>
     )

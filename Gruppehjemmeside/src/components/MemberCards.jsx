@@ -1,7 +1,6 @@
 import MemberCard from "./MemberCard";
+
 import "../styles/memberCards.scss";
-import { fetchAllMembers } from "../sanity/fetches";
-import { useEffect, useState } from "react";
 
 export default function MemberCards({members}) {
     return (
