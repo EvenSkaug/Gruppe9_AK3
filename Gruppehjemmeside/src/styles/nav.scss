@@ -16,7 +16,7 @@ nav {
             width: 100%;
 
             a {
-                color: #000;
+                color: var(--black);
                 font-weight: 550;
                 height: 100%;
                 width: 100%;
@@ -27,7 +27,7 @@ nav {
             }
 
             a:hover {
-                color: var(--red);
+                background-color: var(--off-white);
             }
         }
     }

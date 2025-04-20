@@ -44,6 +44,13 @@ export default function WorkLog({memberSlug}) {
                 <li key={log._key}>
                     <span>{log.description}</span> 
                     <span>
+                        {/* 
+                            - Konverterer til ISO format
+                            - Beholder kun tegn til og med index 9 (10 første tegn)
+                            - Splitter strengen til en array, basert på: "-"
+                            - Reverserer array-ens rekkefølge (preferanse)
+                            - Legger til "/" mellom hver streng i array-en (preferanse) 
+                        */}
                         {new Date(log.date).toISOString().slice(0, 10).split("-").reverse().join("/")}
                     </span>
                 </li>))}
