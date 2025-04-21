@@ -33,8 +33,8 @@ export default function MemberPage({}) {
                 <p>{currentMember?.description}</p>
                 <h2>Interesser</h2>
                 <ul>
-                    {currentMember?.interests?.map((interest) => (
-                        <li>{interest}</li>
+                    {currentMember?.interests?.map((interest, index) => (
+                        <li key={index}>{interest}</li>
                     ))}
                 </ul>
             </article>
